@@ -255,7 +255,7 @@ if __name__ == '__main__':
       if vis:
           im2show = np.copy(im)
 
-      for j in xrange(1, 21):
+      for j in range(1, 21):
           inds = np.where(scores[:, j] > thresh)[0]
           cls_scores = scores[inds, j]
           cls_boxes = pred_boxes[inds, :]
